@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+    background: #34495e;
+
+}
+/* dưới đây là chỉnh vị trí 1 khung */
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color:white;
+    text-transform: uppercase; /* cho chữ login nó bự ra đẹp hơn */
+    font-weight: 500; /* cho chữ đẹp hơn */
+
+}
+
+/* .box input[type = "text"],.box input[ type = "password"]{   gọi là css input*/
+.box input[type = "text"],.box input[ type = "password"]{
+    border: 0;
+    background: none; /* cái này làm cho ô input màu đen giống nền */
+    display: block; /* sắp xếp vị trí lại */
+    margin: 20px  auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px; /* làm cho border bự ra */
+    outline: none;
+     color:white;/* cái này làm cho chữ màu trắng */
+    border-radius: 24px; /* cái này làm cho khung tròn*/
+    transition: 0.25s;  /* LÀM CHẬm cho đẹp lên lúc mở ra*/
+
+     
+/* */
+}
+
+.box input[type = "text"]:focus,.box input[ type = "password"]:focus{
+width:280px;
+border-color: #2ecc71;
+
+
+}
+/* chức năng focus vô khung input*/
+/* cách dùng :focus sau css input*/
+
+
+
+/* thay 2 cái ở dưới box input này là 1 là padding 10px > 40px ,bỏ width, border copy trên xuống để có màu xanh  */
+.box input[type = "submit"]{
+
+    border: 0;
+    background: none; /* cái này làm cho ô input màu đen giống nền */
+    display: block; /* sắp xếp vị trí lại */
+    margin: 20px  auto;
+    text-align: center;
+    /* đổi border nữa nè #3498db >>#2ecc71 */
+    border: 2px solid  #2ecc71;
+    padding: 14px 40px;
+    /* width: 200px; làm cho border bự ra */
+    outline: none;
+    color:white;/* cái này làm cho chữ màu trắng */
+    border-radius: 24px; /* cái này làm cho khung tròn*/
+    transition: 0.25s;  /* LÀM CHẬm cho đẹp lên lúc mở ra*/
+    cursor: pointer;       /*  chỉ vô con mũi tên chi vô*/
+}
+
+
+/* chức năng mới : hover mũi tên nó hiện màu  background khi để mũi tên vô */
+
+.box input[type = "submit"]:hover{
+
+    background: #2ecc71;
+
+
+}
